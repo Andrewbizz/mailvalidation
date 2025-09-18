@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+/* Reset some default browser styles */
+*,
+*::before,
+*::after {
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                    transition: 0.1s;
+                    font-family: "Josefin Sans", sans-serif;
+
+}
+
+/* Set base font and background */
+body {
+                    /* font-family: 'Segoe UI', Arial, sans-serif; */
+                    font-size: 16px;
+                    line-height: 1.5;
+                    background: #e0e0e0;
+                    color: #000000;
+                    height: 100vh;
+                    width: 100%;
+                    font-family: "Josefin Sans", sans-serif;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    align-items: center;
+
+
+}
+
+/* Responsive images */
+img {
+                    max-width: 100%;
+                    height: auto;
+                    display: block;
+}
+
+/* Links */
+a {
+                    color: inherit;
+                    text-decoration: none;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+                    font-weight: 600;
+                    margin-bottom: 0em;
+}
+
+
+h1 {
+                    font-size: 20px;
+}
+
+p {
+                    color: hsl(0, 36%, 70%)
+}
+
+.header {
+                    font-size: 3.2rem;
+                    text-transform: uppercase;
+}
+
+
+.headerTop {
+                    line-height: 100%;
+                    font-weight: 300;
+                    color: hsl(0, 36%, 70%);
+}
+
+.headerBottom {
+                    color: hsl(0, 6%, 24%);
+                    font-weight: 400;
+                    line-height: 100%;
+                    /* font-size: 4.5rem; */
+}
+
+.apparelCont {
+                    height: 550px;
+                    width: 80%;
+                    max-width: 1000px;
+                    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+                    justify-content: space-between;
+                    display: flex;
+
+                    box-shadow: 0 0 80px rgba(128, 128, 128, 0.349);
+}
+
+.halfText {
+                    width: 60%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 60px;
+                    gap: 50px;
+                    position: relative;
+                    align-items: left;
+                    background-image: url(images/bg-pattern-desktop.svg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+
+}
+
+.appImg {
+                    height: 100%;
+                    width: 45%;
+                    max-width: 400px;
+                    background-color: grey;
+                    background-image: url(images/hero-desktop.jpg);
+                    background-size: cover;
+                    background-position: top;
+}
+
+.appForm {
+
+                    position: relative;
+
+}
+
+
+.subBtn {
+                    position: absolute;
+                    right: 0;
+                    border-radius: 22px;
+                    padding: 11px;
+                    width: 70px;
+                    background: linear-gradient(135deg, hsl(0, 100%, 97%), hsl(0, 80%, 86%));
+                    top: 0;
+                    bottom: 0;
+                    transition: 0.5s;
+                    margin: auto;
+                    transform: scale(1.1);
+                    border: none;
+                    z-index: 99;
+}
+
+.subBtn:hover {
+                    cursor: pointer;
+                    box-shadow: 0 05px 12px hsla(0, 23%, 62%, 0.639);
+                    transition: 0.5s;
+}
+
+.theWidth {
+                    width: 80%;
+                    min-width: 320px;
+}
+
+#email {
+                    padding: 12px;
+                    width: 100%;
+
+                    border-radius: 40px;
+                    border: solid 1px hsl(0, 36%, 70%);
+                    background-color: transparent;
+}
+
+#email:focus {
+                    outline: none;
+                    border: solid 1px hsl(0, 36%, 70%);
+}
+
+#email::placeholder {
+                    color: hsl(0, 36%, 70%);
+                    font-size: 12px;
+}
+
+.logoCont {
+                    height: 30px;
+                    width: 150px;
+                    background-image: url(images/logo.svg);
+                    background-position: left;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+}
+
+.innerHalf {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+}
+
+
+
+.incorrect {
+                    border: solid 2px hsl(0, 90%, 57%) !important
+}
+
+.correct {
+                    border: solid 2px hsl(146, 66%, 28%) !important
+}
+
+
+.alert {
+                    position: absolute;
+                    font-size: 12px;
+                    left: 20px;
+                    bottom: -20px;
+                    color: hsl(0, 93%, 68%);
+}
+
+#popIcon {
+                    height: 40px;
+                    width: 40px;
+                    position: absolute;
+                    /* background-color: red; */
+                    top: 0;
+                    right: 25px;
+                    border-radius: 100px;
+                    background-image: url(images/icon-error.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    transition: 0.5s;
+
+
+}
+
+
+.addPop {
+                    right: 75px !important;
+                    transition: 0.5s;
+}
+
+.vert {
+                    color: hsl(113, 26%, 35%);
+}
+
+.hideDes {
+                    display: none;
+}
+
+@media (max-width: 850px) {
+
+
+                    body {
+
+                                        justify-content: unset;
+
+                                        align-items: unset;
+
+
+                    }
+
+
+                    .hidemob {
+                                        display: none;
+                    }
+
+                    .apparelCont {
+                                        flex-direction: column;
+                                        width: 100%;
+                                        height: auto;
+                                        max-width: none;
+                                        box-shadow: none;
+                                        justify-content: unset;
+                    }
+
+                    .halfText {
+                                        width: 100%;
+                                        padding: 32px 16px;
+                                        align-items: center;
+                                        gap: 16px;
+                                        text-align: center;
+                                        order: 1;
+                                        height: auto;
+                    }
+
+                    .appImg {
+                                        width: 100%;
+                                        max-width: none;
+                                        height: 250px;
+                                        background-position: top;
+                    }
+
+                    .header {
+                                        font-size: 2.2rem;
+                    }
+
+                    .appForm {
+                                        width: 100%;
+                    }
+
+                    #email {
+                                        font-size: 1rem;
+                                        padding: 10px;
+                    }
+
+                    .theWidth {
+                                        width: 90%;
+                                        margin: auto;
+                    }
+
+                    .logoCont {
+                                        order: 0;
+                                        height: 100px;
+                                        width: 100%;
+                                        background-size: 100px;
+                                        background-color: #fff;
+                                        background-position: 10px;
+                    }
+
+                    .hideDes {
+                                        display: block;
+                    }
+
+}
