@@ -149,6 +149,11 @@ p {
                     transition: 0.5s;
 }
 
+.subBtn:focus {
+                    outline: none;
+                    border: none;
+}
+
 .theWidth {
                     width: 80%;
                     min-width: 320px;
